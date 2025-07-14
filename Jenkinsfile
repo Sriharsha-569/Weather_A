@@ -8,16 +8,15 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo "Checking out ${APP_NAME} code..."
-                // Simulate Git checkout
-                sh 'echo git clone https://example.com/weather-app.git'
+                echo "Checking out ${APP_NAME} code from GitHub..."
+                git branch: 'main', url: 'https://github.com/Sriharsha-569/Weather_A.git'
             }
         }
 
         stage('Build') {
             steps {
                 echo "Building ${APP_NAME}..."
-                // Simulate a build step (e.g., npm install, Maven compile, etc.)
+                // Simulate a build step
                 sh 'echo Building files...'
             }
         }
@@ -33,7 +32,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploying ${APP_NAME} update..."
-                // Simulate deployment (e.g., copy to server, restart service)
+                // Simulate deployment
                 sh 'echo Deploying to production server...'
             }
         }
