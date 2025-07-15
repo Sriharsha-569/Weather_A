@@ -1,10 +1,13 @@
 /*
  * Study Project: DevOps & Continuous Integration
  * Tool: Jenkins
- * Demo Pipeline for GitHub Repo: Weather_A
+ * Purpose: Demonstrate a CI workflow with Jenkins (Checkout → Build → Test → Report → Deploy)
+ *
  * Author: Sri Harsha Deep Chilakalapudi
+ * Seminar: Concepts & Tools for Application Development
  * Date: 02 July 2025
  */
+
 
 pipeline {
     agent any
