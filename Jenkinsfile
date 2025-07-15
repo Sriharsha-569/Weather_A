@@ -1,3 +1,11 @@
+/*
+ * Study Project: DevOps & Continuous Integration
+ * Tool: Jenkins
+ * Demo Pipeline for GitHub Repo: Weather_A
+ * Author: Sri Harsha Deep Chilakalapudi
+ * Date: 02 July 2025
+ */
+
 pipeline {
     agent any
 
@@ -28,8 +36,14 @@ pipeline {
                 sh 'echo Running unit tests...'
             }
         }
-
-        stage('Deploy') {
+        
+stage('Report') {
+    steps {
+        echo "Generating test report for ${APP_NAME}..."
+        sh 'echo Test report generated successfully!'
+    }
+}
+    stage('Deploy') {
             steps {
                 echo "Deploying ${APP_NAME} update..."
                 // Simulate deployment
