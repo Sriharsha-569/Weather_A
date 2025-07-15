@@ -10,7 +10,7 @@ This repository contains a simple Jenkins Declarative Pipeline that demonstrates
 5. **Deploy** – Simulates deployment to a server  
 
 ## Purpose
-This is a **demo pipeline** to show how Jenkins automates a CI workflow.  
+This is a **pipeline script** to show how Jenkins automates a CI workflow.  
 It is not a production application but an example for learning purposes.  
 
 ## How to Run
