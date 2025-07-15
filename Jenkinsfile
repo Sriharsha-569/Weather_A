@@ -40,13 +40,13 @@ pipeline {
             }
         }
         
-stage('Report') {
-    steps {
-        echo "Generating test report for ${APP_NAME}..."
-        sh 'echo Test report generated successfully!'
-    }
-}
-    stage('Deploy') {
+       stage('Report') {
+            steps {
+               echo "Generating test report for ${APP_NAME}..."
+               sh 'echo Test report generated successfully!'
+            }
+        }
+       stage('Deploy') {
             steps {
                 echo "Deploying ${APP_NAME} update..."
                 // Simulate deployment
